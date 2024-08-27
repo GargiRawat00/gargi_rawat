@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="bg-black">
+    <div class="containe w-screen h-screen roboto-serif">
+        <nav class="p-3 flex bg-white justify-between items-center w-full">
+            <a href="#"  id="brand" class="text-3xl font-bold border-2 px-2 py-1 my-2 mx-2" style="z-index: 9;">GR</a>
+            <div id="nav-menu" class="hidden md:flex gap-12">
+                <a href="./index.html" class="font-medium text-black hover:text-[#2E236C]" >Home</a>
+                <a href="./Education.html" class="font-medium text-black hover:text-[#2E236C]">Education</a>
+                <a href="./Experience.html" class="font-medium text-black hover:text-[#2E236C]">Experience</a>
+                <a href="./Projects.html" class="font-medium text-black hover:text-[#2E236C]">Projects</a>
+                <a href="./Contact.html" class="font-medium text-black hover:text-[#2E236C]">Contact</a>
+                <a href="#" class="font-medium text-black hover:text-[#2E236C]">More</a>
+            </div>
+            <button class="md:hidden" onclick="handleClick()" style="z-index: 999;" >
+                <i class="material-symbols-outlined  text-[3rem] right-[4vw] my-2 mx-2 text-gray-600">menu</i>
+            </button>
+            <div id="nav-dialog" class="md:hidden bg-white inset-0 fixed" style="z-index: 999;">
+                <div id="nav-bar" class="flex justify-between">
+                    <a href="#" class="text-3xl font-bold border-2 px-2 py-1 my-2 mx-2" id="brand">GR</a>
+                    <button class="md:hidden" onclick="handleClick()" style="z-index:999;">
+                        <i class="material-symbols-outlined  text-[3rem] right-[4vw] my-2 mx-2 text-gray-600">close</i>
+                    </button>
+                </div>
+                <div class="mt-6">
+                    <a href="./index.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Home</a>
+                    <a href="./Education.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Education</a>
+                    <a href="./Experience.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Experience</a>
+                    <a href="./Projects.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Projects</a>
+                    <a href="./Contact.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Contact</a>
+                    <a href="#" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">More</a>   
+                </div>
+            </div> 
+        </nav>
+        <div class="box">
+            <h1 class="text-bold text-3xl w-full text-center text-white p-3">Education</h1>
+            <div class="education1 p-2 md:p-4">
+                <div class="card flex flex-wrap items-center">
+                    <div class="material-symbols-outlined text-white p-2 text-bold !text-[1.5rem] md:!text-[3rem]">school</div>
+                    <img src="Banasthali_Vidyapeeth_Logo.png" alt="" class="h-[8vh] w-[8vh]  md:h-[15vh] md:w-[15vh] bg-white rounded-lg p-3 object-contain">
+                    
+                    <div class="jobDesc pl-2 md:pl-8 w-[55vw] md:w-auto"">
+                        <h3 class="text-white md:text-2xl text-bold">Bachelor of Technology</h3>
+                        <h4 class="text-gray-100">Computer Science and Engineering</h4>
+                        <h4 class="text-gray-100">7.94 CGPA</h4>
+                        <h4 class="text-gray-100">Banasthali Vidyapith</h4>
+                        <h4 class="text-gray-100">July 2017- May 2021</h4>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="education2 p-2 md:p-4">
+                <div class="card flex flex-wrap items-center">
+                    <div class="material-symbols-outlined text-white p-2 text-bold !text-[1.5rem] md:!text-[3rem]">school</div>
+                    <img src="SJCS_logo.png" alt="" class="h-[8vh] w-[8vh]  md:h-[15vh] md:w-[15vh] bg-white rounded-lg object-contain">
+                    
+                    <div class="jobDesc pl-2 md:pl-8 w-[55vw] md:w-auto ">
+                        <h3 class="text-white md:text-2xl text-bold">12th</h3>
+                        <h4 class="text-gray-100">Indian School Certificate</h4>
+                        <h4 class="text-gray-100">87%</h4>
+                        <h4 class="text-gray-100">St.Joseph's Convent School</h4>
+                        <h4 class="text-gray-100">April 2016- May 2017</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="education3 p-2 md:p-4">
+                <div class="card flex flex-wrap items-center">
+                    <div class="material-symbols-outlined text-white p-2 text-bold !text-[1.5rem] md:!text-[3rem]">school</div>
+                    <img src="SJCS_logo.png" alt="" class="h-[8vh] w-[8vh]  md:h-[15vh] md:w-[15vh] bg-white rounded-lg object-contain">
+                    
+                    <div class="jobDesc pl-2 md:pl-8 w-[55vw] md:w-auto ">
+                        <h3 class="text-white md:text-2xl text-bold">10th</h3>
+                        <h4 class="text-gray-100">Indian Certificate of Secondary Education</h4>
+                        <h4 class="text-gray-100">90.8%</h4>
+                        <h4 class="text-gray-100">St. Joseph's Convent School</h4>
+                        <h4 class="text-gray-100">April 2014-May 2015</h4>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script1.js"></script>
+</body>
+
+</html>

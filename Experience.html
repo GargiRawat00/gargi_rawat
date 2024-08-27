@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="bg-black">
+    <div class="containe w-screen h-screen roboto-serif">
+        <nav class="p-3 flex bg-white justify-between items-center w-full">
+            <a href="#"  id="brand" class="text-3xl font-bold border-2 px-2 py-1 my-2 mx-2" style="z-index: 9;">GR</a>
+            <div id="nav-menu" class="hidden md:flex gap-12">
+                <a href="./index.html" class="font-medium text-black hover:text-[#2E236C]" >Home</a>
+                <a href="./Education.html" class="font-medium text-black hover:text-[#2E236C]">Education</a>
+                <a href="./Experience.html" class="font-medium text-black hover:text-[#2E236C]">Experience</a>
+                <a href="./Projects.html" class="font-medium text-black hover:text-[#2E236C]">Projects</a>
+                <a href="./Contact.html" class="font-medium text-black hover:text-[#2E236C]">Contact</a>
+                <a href="#" class="font-medium text-black hover:text-[#2E236C]">More</a>
+            </div>
+            <button class="md:hidden" onclick="handleClick()" style="z-index: 999;" >
+                <i class="material-symbols-outlined  text-[3rem] right-[4vw] my-2 mx-2 text-gray-600">menu</i>
+            </button>
+            <div id="nav-dialog" class="md:hidden bg-white inset-0 fixed" style="z-index: 999;">
+                <div id="nav-bar" class="flex justify-between">
+                    <a href="#" class="text-3xl font-bold border-2 px-2 py-1 my-2 mx-2" id="brand">GR</a>
+                    <button class="md:hidden" onclick="handleClick()" style="z-index:999;">
+                        <i class="material-symbols-outlined  text-[3rem] right-[4vw] my-2 mx-2 text-gray-600">close</i>
+                    </button>
+                </div>
+                <div class="mt-6">
+                    <a href="./index.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Home</a>
+                    <a href="./Education.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Education</a>
+                    <a href="./Experience.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Experience</a>
+                    <a href="./Projects.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Projects</a>
+                    <a href="./Contact.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Contact</a>
+                    <a href="#" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">More</a>   
+                </div>
+            </div> 
+        </nav>
+        <div class="box">
+            <h1 class="text-bold text-3xl w-full text-center text-white p-3">Experience</h1>
+            <div class="experience1 p-2 md:p-4">
+                <div class="card flex flex-wrap items-center">
+                    <div class="material-symbols-outlined text-white p-2 text-bold !text-[1.5rem] md:!text-[3rem]">work</div>
+                    <img src="Bank_of_America_logo.png" alt="" class="h-[8vh] w-[8vh]  md:h-[15vh] md:w-[15vh] bg-white rounded-lg p-3 object-contain">
+                    
+                    <div class="jobDesc pl-2 md:pl-8 w-[55vw] md:w-auto"">
+                        <h3 class="text-white md:text-2xl text-bold">Apprentice-Data Engineer</h3>
+                        <h4 class="text-gray-100">Bank of America Continuum</h4>
+                        <h4 class="text-gray-100">July 2021- Sep 2022</h4>
+                    </div>
+                    <button onclick="handleArrowClick('experience1')">
+                        <div class="material-symbols-outlined text-white p-2 text-bold right_arrow !text-[2rem] md:!text-[3rem]">double_arrow</div>
+                        <div class="!hidden material-symbols-outlined text-white p-2 text-bold down_arrow !text-[2rem] md:!text-[3rem]">keyboard_double_arrow_down</div>
+                    </button>
+                </div>
+                <div class="!hidden more m-2 rounded-md border-2 w-[70vw] text-center ml-4 text-white">
+                    <ul>
+                        <li class="flex text-left">
+                             <span class="material-symbols-outlined text-end">chevron_right</span> 
+                             <span>Spearheaded major upgrades for Zaloni on SIT, UAT, and DEV environments, and orchestrated the preparation of PROD and DR for upgrade.</span>
+                        </li>
+                        <li class="flex text-left">
+                            <span class="material-symbols-outlined text-end">chevron_right</span> 
+                            <span>Oversaw the generation and analysis of monthly metrics, automating key processes to enhance efficiency.</span>
+                       </li>
+                       <li class="flex text-left">
+                        <span class="material-symbols-outlined text-end">chevron_right</span> 
+                        <span>Coordinated and participated in monthly patching activities with cross-functional teams</span>
+                       </li>
+                       <li class="flex text-left">
+                        <span class="material-symbols-outlined">chevron_right</span> 
+                        <span>Managed and resolved numerous Nexus and change requests by troubleshooting the platform and collaborating closely with the vendor partners and other cross-functional teams to address tenant issues</span>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience2 p-2 md:p-4">
+                <div class="card flex flex-wrap items-center">
+                    <div class="material-symbols-outlined text-white p-2 text-bold !text-[1.5rem] md:!text-[3rem]">work</div>
+                    <img src="iirs-logo.png" alt="" class="h-[8vh] w-[8vh]  md:h-[15vh] md:w-[15vh] bg-white rounded-lg p-3 object-contain">
+                    
+                    <div class="jobDesc pl-2 md:pl-8 w-[55vw] md:w-auto ">
+                        <h3 class="text-white md:text-2xl text-bold">Intern</h3>
+                        <h4 class="text-gray-100">Indian Institute of Remote Sensing(IIRS-ISRO)</h4>
+                        <h4 class="text-gray-100">July 2020- Dec 2020</h4>
+                    </div>
+                    <button onclick="handleArrowClick('experience2')">
+                        <div class="material-symbols-outlined text-white p-2 text-bold right_arrow !text-[2rem] md:!text-[3rem]">double_arrow</div>
+                        <div class="!hidden material-symbols-outlined text-white p-2 text-bold down_arrow !text-[2rem] md:!text-[3rem]">keyboard_double_arrow_down</div>
+                    </button>
+                </div>
+                <div class="!hidden more m-2 rounded-md border-2 w-[70vw] text-center ml-4 text-white">
+                    <ul>
+                        <li class="flex text-left">
+                            <span class="material-symbols-outlined text-end">chevron_right</span> 
+                            <span> Led satellite image processing and visualization initiatives within the Geoinformatics department by leveraging artificial intelligence technologies</span>
+                       </li>
+                       <li class="flex text-left">
+                           <span class="material-symbols-outlined text-end">chevron_right</span> 
+                           <span>Developed and implemented a Semantic Segmentation module using the U-Net convolutional neural network, achieving 92.28% accuracy and demonstrating precise execution and timely delivery.</span>
+                      </li>
+                      <li class="flex text-left">
+                       <span class="material-symbols-outlined text-end">chevron_right</span> 
+                       <span>Engineered a brick kiln detection module using the YOLO algorithm for object detection </span>
+                      </li>
+                      <li class="flex text-left">
+                       <span class="material-symbols-outlined">chevron_right</span> 
+                       <span> Curated and gathered training and testing data using QGIS, ArcGIS, and LabelImg, ensuring comprehensive and accurate datasets</span>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience3 p-2 md:p-4">
+                <div class="card flex flex-wrap items-center">
+                    <div class="material-symbols-outlined text-white p-2 text-bold !text-[1.5rem] md:!text-[3rem]">work</div>
+                    <img src="BEL-Logo.png" alt="" class="h-[8vh] w-[8vh]  md:h-[15vh] md:w-[15vh] bg-white rounded-lg p-3 object-contain">
+                    
+                    <div class="jobDesc pl-2 md:pl-8 w-[55vw] md:w-auto ">
+                        <h3 class="text-white md:text-2xl text-bold">Summer Trainee</h3>
+                        <h4 class="text-gray-100">Bharat Electronics Limited</h4>
+                        <h4 class="text-gray-100">May 2019-Jul 2019</h4>
+                    </div>
+                    <button onclick="handleArrowClick('experience3')">
+                        <div class="material-symbols-outlined text-white p-2 text-bold right_arrow !text-[2rem] md:!text-[3rem]">double_arrow</div>
+                        <div class="!hidden material-symbols-outlined text-white p-2 text-bold down_arrow !text-[2rem] md:!text-[3rem]">keyboard_double_arrow_down</div>
+                    </button>
+                </div>
+                <div class="!hidden more m-2 rounded-md border-2 w-[70vw] text-center ml-4 text-white">
+                    <ul>
+                        <li class="flex text-left">
+                             <span class="material-symbols-outlined text-end">chevron_right</span> 
+                             <span> Mastered new technologies, processes, and programs rapidly.</span>
+                        </li>
+                        <li class="flex text-left">
+                            <span class="material-symbols-outlined text-end">chevron_right</span> 
+                            <span>Shadowed senior team members to acquire skills and knowledge for related jobs and tasks.</span>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script1.js"></script>
+</body>
+
+</html>
