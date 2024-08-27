@@ -2,7 +2,7 @@ const navDialog=document.getElementById('nav-dialog');
 //console.log(navDialog);
 function handleClick()
 {
-    console.log('toggle triggerd');
+    //console.log('toggle triggerd');
     navDialog.classList.toggle('hidden');
 }
 

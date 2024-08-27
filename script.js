@@ -17,7 +17,7 @@ canva.height=window.innerHeight;
 const context=canva.getContext("2d");
 const starlist=[];
 let speed=5;
-let num=4500;
+let num=3500;
 //initial mouse cursor at the center so animation will start from the center
 let mx=canva.width/2;
 let my=canva.height/2;
@@ -149,7 +149,7 @@ const navDialog=document.getElementById('nav-dialog');
 //console.log(navDialog);
 function handleClick()
 {
-    console.log('toggle triggerd');
+    //console.log('toggle triggerd');
     navDialog.classList.toggle('hidden');
 }
 
