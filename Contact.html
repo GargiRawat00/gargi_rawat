@@ -11,6 +11,36 @@
 </head>
 <body class="bg-black">
     <div class="container text-white text-center flex flex-col justify-end items-center w-full">
+        <nav class="p-3 flex bg-white justify-between items-center w-full">
+            <a href="#"  id="brand" class="text-3xl text-black font-bold border-2 px-2 py-1 my-2 mx-2" style="z-index: 9;">GR</a>
+            <div id="nav-menu" class="hidden md:flex gap-12">
+                <a href="./index.html" class="font-medium text-black hover:text-[#2E236C]" >Home</a>
+                <a href="./Education.html" class="font-medium text-black hover:text-[#2E236C]">Education</a>
+                <a href="./Experience.html" class="font-medium text-black hover:text-[#2E236C]">Experience</a>
+                <a href="./Projects.html" class="font-medium text-black hover:text-[#2E236C]">Projects</a>
+                <a href="./Contact.html" class="font-medium text-black hover:text-[#2E236C]">Contact</a>
+                <a href="#" class="font-medium text-black hover:text-[#2E236C]">More</a>
+            </div>
+            <button class="md:hidden" onclick="handleClick()" style="z-index: 999;" >
+                <i class="material-symbols-outlined  text-[3rem] right-[4vw] my-2 mx-2 text-gray-600">menu</i>
+            </button>
+            <div id="nav-dialog" class="md:hidden bg-white inset-0 fixed" style="z-index: 999;">
+                <div id="nav-bar" class="flex justify-between">
+                    <a href="#" class="text-3xl font-bold border-2 px-2 py-1 my-2 mx-2" id="brand">GR</a>
+                    <button class="md:hidden" onclick="handleClick()" style="z-index:999;">
+                        <i class="material-symbols-outlined  text-[3rem] right-[4vw] my-2 mx-2 text-gray-600">close</i>
+                    </button>
+                </div>
+                <div class="mt-6">
+                    <a href="./index.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Home</a>
+                    <a href="./Education.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Education</a>
+                    <a href="./Experience.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Experience</a>
+                    <a href="./Projects.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Projects</a>
+                    <a href="./Contact.html" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">Contact</a>
+                    <a href="#" class="font-medium text-black hover:bg-gray-100 m-3 p-3 block rounded-lg">More</a>   
+                </div>
+            </div> 
+        </nav>
         <h1 class="text-bold text-3xl w-full text-white p-3 mb-5">Contact Details</h1>
         <h3 class="text-2xl mb-2">Connect with me on:</h3>
         <a href="https://www.linkedin.com/in/gargi-rawat-a74535194/" class="mb-4">
