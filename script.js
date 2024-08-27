@@ -18,6 +18,28 @@ const context=canva.getContext("2d");
 const starlist=[];
 let speed=5;
 let num=3500;
+const orig_num=3500;
+const orig_speed=5;
+if (window.matchMedia("(max-width: 640px)").matches) {
+    //small screens
+    num = 1800;
+    speed=3;
+}
+window.addEventListener('resize', responsiveSpeed);
+function responsiveSpeed()
+{
+    if (window.matchMedia("(max-width: 640px)").matches) {
+        //small screens
+        num = 1800;
+        speed=3;
+    }
+    else
+    {
+        num=orig_num;
+        speed=orig_speed;
+    }
+    //console.log(num);
+}
 //initial mouse cursor at the center so animation will start from the center
 let mx=canva.width/2;
 let my=canva.height/2;
