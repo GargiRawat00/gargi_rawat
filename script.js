@@ -175,3 +175,31 @@ function handleClick()
     navDialog.classList.toggle('hidden');
 }
 
+const dynamicBtn = document.getElementById('dynamicBtn');
+const targetArray = [
+    { content: 'Projects', dest: './Projects.html' },
+    { content: 'Experience', dest: './Experience.html' },
+    { content: 'Education', dest: './Education.html' }
+];
+
+let currInd = 0;
+dynamicBtn.textContent = targetArray[currInd].content;
+dynamicBtn.onclick = () => {
+    window.location.href = targetArray[currInd].dest;
+};
+
+setInterval(() => {
+    // Capture the current index to avoid closure issues
+    currInd = (currInd + 1) % targetArray.length;
+    const currentContent = targetArray[currInd].content;
+    const currentDest = targetArray[currInd].dest;
+
+    // Update the button's text and destination link
+    dynamicBtn.textContent = currentContent;
+    dynamicBtn.onclick = () => {
+        window.location.href = currentDest;
+    };
+
+    // Move to the next index, looping back to the start if necessary
+    
+}, 3000);
